@@ -131,8 +131,10 @@
   border: 20px solid #dedcff;
   border-radius: 36px;
 
-  max-height: 90vh;
-  overflow-y: hidden;
+  max-height: 80vh;
+
+  overflow-y: auto;
+
   overflow-x: hidden;
   transition: all 0.3s;
 }

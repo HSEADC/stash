@@ -274,7 +274,18 @@
 .O_ArticleRead2,
 .O_ArticleRead3,
 .O_ArticleRead4,
-.O_ArticleRead5 {
+.O_ArticleRead5,
+.O_ArticleRead6,
+.O_ArticleRead7,
+.O_ArticleRead8,
+.O_ArticleRead9,
+.O_ArticleRead10,
+.O_ArticleRead11,
+.O_ArticleRead12,
+.O_ArticleRead13,
+.O_ArticleRead14,
+.O_ArticleRead15,
+.O_ArticleRead16 {
   display: none;
 }
 
