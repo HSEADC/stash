@@ -14,11 +14,22 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-  setupMenuToggle('.M_BigArticle1', '.M_D8ArticlesWindows, .M_D9ArticlesWindows, .M_D10ArticlesWindows, .M_D11ArticlesWindows, .M_D4ArticlesWindows', 'Странности &uarr;', 'Странности &darr;');
-  setupMenuToggle('.M_BigArticle2', '.M_D12ArticlesWindows, .M_D13ArticlesWindows, .M_D14ArticlesWindows, .M_D15ArticlesWindows, .M_D16ArticlesWindows, .M_D17ArticlesWindows, .M_D18ArticlesWindows', 'Соцсети &uarr;', 'Соцсети &darr;');
-  setupMenuToggle('.M_BigArticle3', '.M_D19ArticlesWindows, .M_D20ArticlesWindows, .M_D21ArticlesWindows, .M_D22ArticlesWindows', 'Артефакты &uarr;', 'Артефакты &darr;');
-  setupMenuToggle('.M_BigArticle4', '.M_D82ArticlesWindows, .M_D92ArticlesWindows, .M_D102ArticlesWindows, .M_D112ArticlesWindows, .M_D42ArticlesWindows', 'Тесты &uarr;', 'Тесты &darr;');
-  setupMenuToggle('.M_BigArticle5', '.M_D82ArticlesWindows, .M_D92ArticlesWindows, .M_D102ArticlesWindows, .M_D112ArticlesWindows, .M_D42ArticlesWindows', 'Марафон тгк &uarr;', 'Марафон тгк &darr;');
+  setupMenuToggle('.M_BigArticle1', '.M_D8ArticlesWindows, .M_D9ArticlesWindows, .M_D10ArticlesWindows, .M_D11ArticlesWindows', 'Странности &uarr;', 'Странности &darr;');
+  setupMenuToggle('.M_BigArticle2', '.M_D3ArticlesWindows,.M_D12ArticlesWindows, .M_D13ArticlesWindows, .M_D14ArticlesWindows, .M_D15ArticlesWindows, .M_D16ArticlesWindows, .M_D17ArticlesWindows, .M_D18ArticlesWindows', 'Соцсети &uarr;', 'Соцсети &darr;');
+  setupMenuToggle('.M_BigArticle3', '.M_D19ArticlesWindows, .M_D20ArticlesWindows, .M_D21ArticlesWindows, .M_D22ArticlesWindows, .M_D4ArticlesWindows', 'Артефакты &uarr;', 'Артефакты &darr;');
+  // setupMenuToggle(
+  //   '.M_BigArticle4',
+  //   '.M_D82ArticlesWindows, .M_D92ArticlesWindows, .M_D102ArticlesWindows, .M_D112ArticlesWindows, .M_D42ArticlesWindows',
+  //   'Тесты &uarr;',
+  //   'Тесты &darr;'
+  // )
+  // setupMenuToggle(
+  //   '.M_BigArticle5',
+  //   '.M_D82ArticlesWindows, .M_D92ArticlesWindows, .M_D102ArticlesWindows, .M_D112ArticlesWindows, .M_D42ArticlesWindows',
+  //   'Марафон тгк &uarr;',
+  //   'Марафон тгк &darr;'
+  // )
+
   var relations = [{
     button: '.M_D2ArticlesWindows',
     article: '.O_ArticleRead1'
