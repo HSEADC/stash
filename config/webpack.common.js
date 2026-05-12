@@ -54,6 +54,19 @@ module.exports = {
       },
 
       {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'string-replace-loader',
+            options: {
+              search: '<img ',
+              replace: '<img loading="lazy" ',
+              flags: 'g'
+            }
+          }
+        ]
+      },
+      {
         test: /\.(ttf|otf|woff\woff2)$/i,
         type: 'asset/resource',
         generator: {
