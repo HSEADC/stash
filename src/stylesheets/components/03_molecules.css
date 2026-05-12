@@ -291,8 +291,8 @@ a.M_AboutUsMenuLinks img {
 .M_BigArticle1,
 .M_BigArticle2,
 .M_BigArticle3,
-.M_BigArticle4,
-.M_BigArticle5,
+/* .M_BigArticle4,
+.M_BigArticle5, */
 .M_D8ArticlesWindows,
 .M_D9ArticlesWindows,
 .M_D10ArticlesWindows,
@@ -331,8 +331,8 @@ a.M_AboutUsMenuLinks img {
 .M_BigArticle1,
 .M_BigArticle2,
 .M_BigArticle3,
-.M_BigArticle4,
-.M_BigArticle5,
+/* .M_BigArticle4,
+.M_BigArticle5, */
 .M_D8ArticlesWindows,
 .M_D9ArticlesWindows,
 .M_D10ArticlesWindows,
@@ -348,7 +348,7 @@ a.M_AboutUsMenuLinks img {
 .M_D20ArticlesWindows,
 .M_D21ArticlesWindows,
 .M_D22ArticlesWindows {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .M_D1ArticlesWindows h5,
 .M_D2ArticlesWindows h5,
@@ -359,8 +359,8 @@ a.M_AboutUsMenuLinks img {
 .M_BigArticle1 h5,
 .M_BigArticle2 h5,
 .M_BigArticle3 h5,
-.M_BigArticle4 h5,
-.M_BigArticle5 h5,
+/* .M_BigArticle4 h5,
+.M_BigArticle5 h5, */
 .M_D8ArticlesWindows h5,
 .M_D9ArticlesWindows h5,
 .M_D10ArticlesWindows h5,
@@ -385,9 +385,9 @@ a.M_AboutUsMenuLinks img {
 .M_D2ArticlesWindows,
 .M_BigArticle1,
 .M_BigArticle2,
-.M_BigArticle3,
-.M_BigArticle4,
-.M_BigArticle5 {
+.M_BigArticle3
+/* .M_BigArticle4,
+.M_BigArticle5  */ {
   padding: 2% 3%;
 }
 .M_D3ArticlesWindows,
@@ -412,6 +412,7 @@ a.M_AboutUsMenuLinks img {
   padding: 4% 3%;
 }
 
+.M_D3ArticlesWindows,
 .M_D8ArticlesWindows,
 .M_D9ArticlesWindows,
 .M_D10ArticlesWindows,
@@ -430,6 +431,7 @@ a.M_AboutUsMenuLinks img {
 .M_D22ArticlesWindows {
   display: none;
 }
+.M_D3ArticlesWindows.visible,
 .M_D8ArticlesWindows.visible,
 .M_D9ArticlesWindows.visible,
 .M_D10ArticlesWindows.visible,
