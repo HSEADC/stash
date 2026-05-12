@@ -26,6 +26,7 @@
     "postcss-nested": "^7.0.2",
     "postcss-preset-env": "^10.2.4",
     "stream-browserify": "^3.0.0",
+    "string-replace-loader": "^3.3.0",
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.14",
     "webpack": "^5.101.1",
