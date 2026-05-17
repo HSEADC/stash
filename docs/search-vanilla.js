@@ -1,2 +1,0 @@
-initSearch()
-function initSearch() {}
