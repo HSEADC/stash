@@ -1,0 +1,2 @@
+initSearch()
+function initSearch() {}

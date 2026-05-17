@@ -15,7 +15,8 @@ module.exports = {
     allStyles: './src/js/allStyles.js',
     websites: './src/js/websites.js',
     memes: './src/js/memes.js',
-    game1: './src/js/game.js'
+    game1: './src/js/game.js',
+    searchVanilla: './src/js/search-vanilla.js'
   },
   output: {
     filename: '[name].js',
