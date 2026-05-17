@@ -13,8 +13,7 @@ const htmlPages = [
   createPages('./src/styleguide.html', './styleguide.html', ['allStyles']),
   createPages('./src/pages/articles.html', './pages/articles.html', [
     'articles',
-    'allStyles',
-    'searchVanilla'
+    'allStyles'
   ]),
 
   createPages('./src/pages/aboutUs.html', './pages/aboutUs.html', [

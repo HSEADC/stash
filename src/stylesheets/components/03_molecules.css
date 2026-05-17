@@ -447,7 +447,8 @@ a.M_AboutUsMenuLinks img {
 .M_D19ArticlesWindows.visible,
 .M_D20ArticlesWindows.visible,
 .M_D21ArticlesWindows.visible,
-.M_D22ArticlesWindows.visible {
+.M_D22ArticlesWindows.visible,
+.M_SearchArticle {
   display: flex;
   cursor: default;
 }
