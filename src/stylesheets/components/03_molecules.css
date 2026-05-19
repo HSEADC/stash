@@ -462,6 +462,13 @@ a.M_AboutUsMenuLinks img {
   margin-bottom: 20%;
 }
 
+[class^='O_ArticleRead'] h2 {
+  font-size: 30px;
+  font-family: 'arial narrow';
+  font-weight: 700;
+  color: #0037ff;
+}
+
 /* _____________________________websites_____________________________ */
 
 .M_DRubricators {
