@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   setupMenuToggle('.M_BigArticle1', '.M_D8ArticlesWindows, .M_D9ArticlesWindows, .M_D10ArticlesWindows, .M_D11ArticlesWindows', 'Странности &uarr;', 'Странности &darr;');
   setupMenuToggle('.M_BigArticle2', '.M_D3ArticlesWindows,.M_D12ArticlesWindows, .M_D13ArticlesWindows, .M_D14ArticlesWindows, .M_D15ArticlesWindows, .M_D16ArticlesWindows, .M_D17ArticlesWindows, .M_D18ArticlesWindows', 'Соцсети &uarr;', 'Соцсети &darr;');
   setupMenuToggle('.M_BigArticle3', '.M_D19ArticlesWindows, .M_D20ArticlesWindows, .M_D21ArticlesWindows, .M_D22ArticlesWindows, .M_D4ArticlesWindows', 'Артефакты &uarr;', 'Артефакты &darr;');
+  setupMenuToggle('.M_BigArticle4', '.M_D5ArticlesWindows', 'Личности &uarr;', 'Личности &darr;');
   var relations = [{
     button: '.M_D2ArticlesWindows',
     article: '.O_ArticleRead1'
@@ -29,10 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }, {
     button: '.M_D5ArticlesWindows',
     article: '.O_ArticleRead4'
-  }, {
-    button: '.M_D6ArticlesWindows',
-    article: '.O_ArticleRead5'
-  }, {
+  },
+  // { button: '.M_D6ArticlesWindows', article: '.O_ArticleRead5' },
+  {
     button: '.M_D8ArticlesWindows',
     article: '.O_ArticleRead7'
   }, {
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     button: '.M_D22ArticlesWindows',
     article: '.O_ArticleRead20'
   }];
-  var allArticles = document.querySelectorAll('.O_ArticleRead1, .O_ArticleRead2, .O_ArticleRead3, .O_ArticleRead4, .O_ArticleRead5, .O_ArticleRead6, .O_ArticleRead7, .O_ArticleRead8, .O_ArticleRead9, .O_ArticleRead10, .O_ArticleRead11, .O_ArticleRead12, .O_ArticleRead13, .O_ArticleRead14, .O_ArticleRead15, .O_ArticleRead16, .O_ArticleRead17, .O_ArticleRead18, .O_ArticleRead19, .O_ArticleRead20');
+  var allArticles = document.querySelectorAll('.O_ArticleRead1, .O_ArticleRead2, .O_ArticleRead3, .O_ArticleRead4, .O_ArticleRead6, .O_ArticleRead7, .O_ArticleRead8, .O_ArticleRead9, .O_ArticleRead10, .O_ArticleRead11, .O_ArticleRead12, .O_ArticleRead13, .O_ArticleRead14, .O_ArticleRead15, .O_ArticleRead16, .O_ArticleRead17, .O_ArticleRead18, .O_ArticleRead19, .O_ArticleRead20');
   allArticles.forEach(function (article) {
     article.style.display = 'none';
   });
@@ -111,8 +111,15 @@ document.addEventListener('DOMContentLoaded', function () {
     trigger: '.M_BigArticle3',
     targets: ['.M_D19ArticlesWindows', '.M_D20ArticlesWindows', '.M_D21ArticlesWindows', '.M_D22ArticlesWindows', '.M_D4ArticlesWindows'],
     textClose: 'Артефакты ↓'
+  }, {
+    trigger: '.M_BigArticle4',
+    targets: ['.M_D5ArticlesWindows'],
+    textClose: 'Личности ↓'
   }];
-  var topButtons = ['.M_D2ArticlesWindows', '.M_D5ArticlesWindows', '.M_D6ArticlesWindows'];
+  var topButtons = ['.M_D2ArticlesWindows'
+  // '.M_D5ArticlesWindows',
+  // '.M_D6ArticlesWindows'
+  ];
   if (searchInput) {
     searchInput.addEventListener('input', function () {
       var query = searchInput.value.toLowerCase().trim();
