@@ -39,13 +39,19 @@ document.addEventListener('DOMContentLoaded', () => {
     'Артефакты &uarr;',
     'Артефакты &darr;'
   )
+  setupMenuToggle(
+    '.M_BigArticle4',
+    '.M_D5ArticlesWindows',
+    'Личности &uarr;',
+    'Личности &darr;'
+  )
 
   const relations = [
     { button: '.M_D2ArticlesWindows', article: '.O_ArticleRead1' },
     { button: '.M_D3ArticlesWindows', article: '.O_ArticleRead2' },
     { button: '.M_D4ArticlesWindows', article: '.O_ArticleRead3' },
     { button: '.M_D5ArticlesWindows', article: '.O_ArticleRead4' },
-    { button: '.M_D6ArticlesWindows', article: '.O_ArticleRead5' },
+    // { button: '.M_D6ArticlesWindows', article: '.O_ArticleRead5' },
     { button: '.M_D8ArticlesWindows', article: '.O_ArticleRead7' },
     { button: '.M_D9ArticlesWindows', article: '.O_ArticleRead8' },
     { button: '.M_D10ArticlesWindows', article: '.O_ArticleRead9' },
@@ -64,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ]
 
   const allArticles = document.querySelectorAll(
-    '.O_ArticleRead1, .O_ArticleRead2, .O_ArticleRead3, .O_ArticleRead4, .O_ArticleRead5, .O_ArticleRead6, .O_ArticleRead7, .O_ArticleRead8, .O_ArticleRead9, .O_ArticleRead10, .O_ArticleRead11, .O_ArticleRead12, .O_ArticleRead13, .O_ArticleRead14, .O_ArticleRead15, .O_ArticleRead16, .O_ArticleRead17, .O_ArticleRead18, .O_ArticleRead19, .O_ArticleRead20'
+    '.O_ArticleRead1, .O_ArticleRead2, .O_ArticleRead3, .O_ArticleRead4, .O_ArticleRead6, .O_ArticleRead7, .O_ArticleRead8, .O_ArticleRead9, .O_ArticleRead10, .O_ArticleRead11, .O_ArticleRead12, .O_ArticleRead13, .O_ArticleRead14, .O_ArticleRead15, .O_ArticleRead16, .O_ArticleRead17, .O_ArticleRead18, .O_ArticleRead19, .O_ArticleRead20'
   )
 
   allArticles.forEach((article) => {
@@ -127,13 +133,18 @@ document.addEventListener('DOMContentLoaded', () => {
         '.M_D4ArticlesWindows'
       ],
       textClose: 'Артефакты ↓'
+    },
+    {
+      trigger: '.M_BigArticle4',
+      targets: ['.M_D5ArticlesWindows'],
+      textClose: 'Личности ↓'
     }
   ]
 
   const topButtons = [
-    '.M_D2ArticlesWindows',
-    '.M_D5ArticlesWindows',
-    '.M_D6ArticlesWindows'
+    '.M_D2ArticlesWindows'
+    // '.M_D5ArticlesWindows',
+    // '.M_D6ArticlesWindows'
   ]
 
   if (searchInput) {
