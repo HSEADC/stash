@@ -1,8 +1,225 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 997
-(module, __unused_webpack_exports, __webpack_require__) {
+/***/ 51:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  I: () => (/* binding */ chooseAnswer),
+  v: () => (/* binding */ initTest)
+});
+
+;// ./src/images/A.CROSS.webp
+const A_CROSS_namespaceObject = __webpack_require__.p + "images/c6ef64ee209aebbea188.webp";
+;// ./src/images/Q.D1LEMON.svg
+const Q_D1LEMON_namespaceObject = __webpack_require__.p + "images/b6a27666d26d995fc0f3.svg";
+;// ./src/images/Q.D2LEMON.svg
+const Q_D2LEMON_namespaceObject = __webpack_require__.p + "images/e5a0150076bca6cff321.svg";
+;// ./src/images/Q.D3LEMON.svg
+const Q_D3LEMON_namespaceObject = __webpack_require__.p + "images/0402b5b0cdf7733b622e.svg";
+// EXTERNAL MODULE: ./node_modules/airtable/lib/airtable.umd.js
+var airtable_umd = __webpack_require__(997);
+var airtable_umd_default = /*#__PURE__*/__webpack_require__.n(airtable_umd);
+;// ./src/js/tests.js
+
+
+
+
+var answersInputs = document.querySelectorAll('input[type=radio]');
+var currentStage = 0;
+var resultCount = 0;
+function initTest(stages) {
+  var numberOfQuestion = document.querySelector('.A_NumberOfQuestion');
+  var question = document.querySelector('.A_Question');
+  var answers = document.querySelectorAll('.A_AnswerText');
+  var answersInputs = document.querySelectorAll('input[type=radio]');
+  var imageTop = document.querySelector('.A_DecorationTopRight');
+  var imageBottom = document.querySelector('.A_DecorationBottomLeft');
+  numberOfQuestion.innerText = "\u0432\u043E\u043F\u0440\u043E\u0441 ".concat(currentStage + 1, " \u0438\u0437 ").concat(stages.length);
+  question.innerText = stages[currentStage].question;
+  if (imageTop && stages[currentStage].imgTop) {
+    imageTop.style.backgroundImage = "url(".concat(stages[currentStage].imgTop, ")");
+  }
+  if (imageBottom && stages[currentStage].imgBottom) {
+    imageBottom.style.backgroundImage = "url(".concat(stages[currentStage].imgBottom, ")");
+  }
+  if (currentStage % 2 === 0) {
+    imageTop.style.left = 'auto';
+    imageTop.style.right = '-38%';
+    imageBottom.style.right = 'auto';
+    imageBottom.style.left = '0';
+  } else {
+    imageTop.style.right = 'auto';
+    imageTop.style.left = '1%';
+    imageBottom.style.left = 'auto';
+    imageBottom.style.right = '-48%';
+  }
+  for (var i = 0; i < answers.length; i++) {
+    answers[i].innerText = stages[currentStage].answers[i].text;
+    answersInputs[i].dataset.count = stages[currentStage].answers[i].count;
+    answersInputs[i].checked = false;
+  }
+  var indicator = document.querySelector('.A_ProgressBarIndicator');
+  if (indicator) {
+    var progressPercent = currentStage / (stages.length - 1) * 100;
+    if (progressPercent < 7) progressPercent = 7;
+    if (progressPercent > 93) progressPercent = 93;
+    indicator.style.left = progressPercent + '%';
+  }
+}
+function chooseAnswer(stages, results) {
+  var answersInputs = document.querySelectorAll('input[type=radio]');
+  answersInputs.forEach(function (radio) {
+    radio.addEventListener('change', function () {
+      if (radio.checked) {
+        setTimeout(function () {
+          resultCount += Number(radio.dataset.count);
+          updateStage(stages, results);
+        }, 300);
+      }
+    });
+  });
+}
+function updateStage(stages, results) {
+  currentStage++;
+  if (currentStage < stages.length) {
+    initTest(stages);
+  } else {
+    showResult(results);
+  }
+}
+function showResult(results) {
+  var progressBar = document.querySelector('.M_DProgressBar');
+  if (progressBar) progressBar.style.display = 'none';
+  var testContainer = document.querySelector('.W_Test');
+  testContainer.innerHTML = '';
+  var resultWrapper = document.createElement('div');
+  resultWrapper.classList.add('M_TestResult');
+  var lemonContainer = document.createElement('div');
+  lemonContainer.classList.add('M_LemonTest');
+  var lemon1 = document.createElement('div');
+  lemon1.classList.add('Q_TestLemon1');
+  lemon1.style.backgroundImage = "url(".concat(Q_D1LEMON_namespaceObject, ")");
+  var lemon2 = document.createElement('div');
+  lemon2.classList.add('Q_TestLemon2');
+  lemon2.style.backgroundImage = "url(".concat(Q_D2LEMON_namespaceObject, ")");
+  var lemon3 = document.createElement('div');
+  lemon3.classList.add('Q_TestLemon3');
+  lemon3.style.backgroundImage = "url(".concat(Q_D3LEMON_namespaceObject, ")");
+  var testResMolecule = document.createElement('div');
+  testResMolecule.classList.add('M_TestResultCountMolecule');
+  var resultCnt = document.createElement('h2');
+  resultCnt.classList.add('A_TestResultCount');
+  resultCnt.innerText = "\u0418\u0442\u043E\u0433: ".concat(resultCount, "/8");
+  var crossImage = document.createElement('img');
+  crossImage.src = A_CROSS_namespaceObject;
+  crossImage.classList.add('A_TestResultCross');
+  crossImage.classList.add('A_TestResultCross');
+  crossImage.onclick = function () {
+    return window.location.href = '../tests.html';
+  };
+  var resultParagraph = document.createElement('p');
+  resultParagraph.classList.add('A_TestResultParagraph');
+  if (resultCount >= 7) {
+    resultParagraph.innerText = results[0].paragraph;
+  } else if (resultCount >= 4) {
+    resultParagraph.innerText = results[1].paragraph;
+  } else {
+    resultParagraph.innerText = results[2].paragraph;
+  }
+  testResMolecule.appendChild(resultCnt);
+  testResMolecule.appendChild(crossImage);
+  resultWrapper.appendChild(testResMolecule);
+  resultWrapper.appendChild(resultParagraph);
+  resultWrapper.appendChild(lemon1);
+  resultWrapper.appendChild(lemon2);
+  resultWrapper.appendChild(lemon3);
+  testContainer.appendChild(resultWrapper);
+}
+
+// ________________________airtable script_______________________________
+
+
+var token = 'patdXreHafdjmq3wj.ef812e3ea4fe39ed00b01b55308d5893ff0a20ad467ca49500324fb398a92a62';
+airtable_umd_default().configure({
+  endpointUrl: 'https://api.airtable.com',
+  apiKey: token
+});
+var base = airtable_umd_default().base('appI9JTrjB3ZBx6WZ');
+var data;
+getTestsTeasers().then(function (content) {
+  data = content;
+  updateInfo(data);
+});
+function getTestsTeasers() {
+  return new Promise(function (resolve, reject) {
+    var content = [];
+    base('C_DTests').select({
+      maxRecords: 10
+    }).firstPage().then(function (result) {
+      result.forEach(function (record) {
+        content.push({
+          id: record.id,
+          title: record.fields['Title'],
+          description: record.fields['Description'],
+          image: record.fields['Images'],
+          url: record.fields['URL']
+        });
+      });
+      resolve(content);
+    });
+  });
+}
+function updateInfo(content) {
+  content.forEach(function (stroke) {
+    createTestsTeaserCard(stroke);
+  });
+}
+function createTestsTeaserCard(stroke) {
+  var title = stroke.title,
+    description = stroke.description,
+    image = stroke.image,
+    url = stroke.url;
+  var card = document.createElement('a');
+  card.href = url;
+  card.classList.add('W_TestTeaser');
+  var textContent = document.createElement('div');
+  textContent.classList.add('M_TestTeaserContent');
+  var header = document.createElement('h4');
+  header.innerText = title;
+  header.classList.add('A_TestTeaserHeader');
+  var text = document.createElement('p');
+  text.innerText = description;
+  text.classList.add('A_TestTeaserDescription');
+  var icon = document.createElement('div');
+  icon.classList.add('A_TestTeaserIcon');
+  var imageUrl = '';
+  if (Array.isArray(image) && image.length > 0) {
+    imageUrl = image[0].url;
+  } else if (typeof image === 'string') {
+    imageUrl = image;
+  }
+  if (imageUrl) {
+    icon.style.backgroundImage = "url(".concat(imageUrl, ")");
+  }
+  textContent.appendChild(header);
+  textContent.appendChild(text);
+  card.appendChild(textContent);
+  card.appendChild(icon);
+  var container = document.querySelector('.C_DTests');
+  if (container) {
+    container.appendChild(card);
+  }
+}
+
+
+/***/ }),
+
+/***/ 997:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 (function(f){if(true){module.exports=f()}else // removed by dead control flow
 { var g; }})(function(){var define,module,exports;return (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c=undefined;if(!f&&c)return require(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u=undefined,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
@@ -3761,224 +3978,7 @@ module.exports = Airtable;
 });
 
 
-/***/ },
-
-/***/ 51
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  I: () => (/* binding */ chooseAnswer),
-  v: () => (/* binding */ initTest)
-});
-
-;// ./src/images/A.CROSS.webp
-const A_CROSS_namespaceObject = __webpack_require__.p + "images/c6ef64ee209aebbea188.webp";
-;// ./src/images/Q.D1LEMON.svg
-const Q_D1LEMON_namespaceObject = __webpack_require__.p + "images/b6a27666d26d995fc0f3.svg";
-;// ./src/images/Q.D2LEMON.svg
-const Q_D2LEMON_namespaceObject = __webpack_require__.p + "images/e5a0150076bca6cff321.svg";
-;// ./src/images/Q.D3LEMON.svg
-const Q_D3LEMON_namespaceObject = __webpack_require__.p + "images/0402b5b0cdf7733b622e.svg";
-// EXTERNAL MODULE: ./node_modules/airtable/lib/airtable.umd.js
-var airtable_umd = __webpack_require__(997);
-var airtable_umd_default = /*#__PURE__*/__webpack_require__.n(airtable_umd);
-;// ./src/js/tests.js
-
-
-
-
-var answersInputs = document.querySelectorAll('input[type=radio]');
-var currentStage = 0;
-var resultCount = 0;
-function initTest(stages) {
-  var numberOfQuestion = document.querySelector('.A_NumberOfQuestion');
-  var question = document.querySelector('.A_Question');
-  var answers = document.querySelectorAll('.A_AnswerText');
-  var answersInputs = document.querySelectorAll('input[type=radio]');
-  var imageTop = document.querySelector('.A_DecorationTopRight');
-  var imageBottom = document.querySelector('.A_DecorationBottomLeft');
-  numberOfQuestion.innerText = "\u0432\u043E\u043F\u0440\u043E\u0441 ".concat(currentStage + 1, " \u0438\u0437 ").concat(stages.length);
-  question.innerText = stages[currentStage].question;
-  if (imageTop && stages[currentStage].imgTop) {
-    imageTop.style.backgroundImage = "url(".concat(stages[currentStage].imgTop, ")");
-  }
-  if (imageBottom && stages[currentStage].imgBottom) {
-    imageBottom.style.backgroundImage = "url(".concat(stages[currentStage].imgBottom, ")");
-  }
-  if (currentStage % 2 === 0) {
-    imageTop.style.left = 'auto';
-    imageTop.style.right = '-38%';
-    imageBottom.style.right = 'auto';
-    imageBottom.style.left = '0';
-  } else {
-    imageTop.style.right = 'auto';
-    imageTop.style.left = '1%';
-    imageBottom.style.left = 'auto';
-    imageBottom.style.right = '-48%';
-  }
-  for (var i = 0; i < answers.length; i++) {
-    answers[i].innerText = stages[currentStage].answers[i].text;
-    answersInputs[i].dataset.count = stages[currentStage].answers[i].count;
-    answersInputs[i].checked = false;
-  }
-  var indicator = document.querySelector('.A_ProgressBarIndicator');
-  if (indicator) {
-    var progressPercent = currentStage / (stages.length - 1) * 100;
-    if (progressPercent < 7) progressPercent = 7;
-    if (progressPercent > 93) progressPercent = 93;
-    indicator.style.left = progressPercent + '%';
-  }
-}
-function chooseAnswer(stages, results) {
-  var answersInputs = document.querySelectorAll('input[type=radio]');
-  answersInputs.forEach(function (radio) {
-    radio.addEventListener('change', function () {
-      if (radio.checked) {
-        setTimeout(function () {
-          resultCount += Number(radio.dataset.count);
-          updateStage(stages, results);
-        }, 300);
-      }
-    });
-  });
-}
-function updateStage(stages, results) {
-  currentStage++;
-  if (currentStage < stages.length) {
-    initTest(stages);
-  } else {
-    showResult(results);
-  }
-}
-function showResult(results) {
-  var progressBar = document.querySelector('.M_DProgressBar');
-  if (progressBar) progressBar.style.display = 'none';
-  var testContainer = document.querySelector('.W_Test');
-  testContainer.innerHTML = '';
-  var resultWrapper = document.createElement('div');
-  resultWrapper.classList.add('M_TestResult');
-  var lemonContainer = document.createElement('div');
-  lemonContainer.classList.add('M_LemonTest');
-  var lemon1 = document.createElement('div');
-  lemon1.classList.add('Q_TestLemon1');
-  lemon1.style.backgroundImage = "url(".concat(Q_D1LEMON_namespaceObject, ")");
-  var lemon2 = document.createElement('div');
-  lemon2.classList.add('Q_TestLemon2');
-  lemon2.style.backgroundImage = "url(".concat(Q_D2LEMON_namespaceObject, ")");
-  var lemon3 = document.createElement('div');
-  lemon3.classList.add('Q_TestLemon3');
-  lemon3.style.backgroundImage = "url(".concat(Q_D3LEMON_namespaceObject, ")");
-  var testResMolecule = document.createElement('div');
-  testResMolecule.classList.add('M_TestResultCountMolecule');
-  var resultCnt = document.createElement('h2');
-  resultCnt.classList.add('A_TestResultCount');
-  resultCnt.innerText = "\u0418\u0442\u043E\u0433: ".concat(resultCount, "/8");
-  var crossImage = document.createElement('img');
-  crossImage.src = A_CROSS_namespaceObject;
-  crossImage.classList.add('A_TestResultCross');
-  crossImage.classList.add('A_TestResultCross');
-  crossImage.onclick = function () {
-    return window.location.href = '../tests.html';
-  };
-  var resultParagraph = document.createElement('p');
-  resultParagraph.classList.add('A_TestResultParagraph');
-  if (resultCount >= 7) {
-    resultParagraph.innerText = results[0].paragraph;
-  } else if (resultCount >= 4) {
-    resultParagraph.innerText = results[1].paragraph;
-  } else {
-    resultParagraph.innerText = results[2].paragraph;
-  }
-  testResMolecule.appendChild(resultCnt);
-  testResMolecule.appendChild(crossImage);
-  resultWrapper.appendChild(testResMolecule);
-  resultWrapper.appendChild(resultParagraph);
-  resultWrapper.appendChild(lemon1);
-  resultWrapper.appendChild(lemon2);
-  resultWrapper.appendChild(lemon3);
-  testContainer.appendChild(resultWrapper);
-}
-
-// ________________________airtable script_______________________________
-
-
-var token = 'patdXreHafdjmq3wj.ef812e3ea4fe39ed00b01b55308d5893ff0a20ad467ca49500324fb398a92a62';
-airtable_umd_default().configure({
-  endpointUrl: 'https://api.airtable.com',
-  apiKey: token
-});
-var base = airtable_umd_default().base('appI9JTrjB3ZBx6WZ');
-var data;
-getTestsTeasers().then(function (content) {
-  data = content;
-  updateInfo(data);
-});
-function getTestsTeasers() {
-  return new Promise(function (resolve, reject) {
-    var content = [];
-    base('C_DTests').select({
-      maxRecords: 10
-    }).firstPage().then(function (result) {
-      result.forEach(function (record) {
-        content.push({
-          id: record.id,
-          title: record.fields['Title'],
-          description: record.fields['Description'],
-          image: record.fields['Images'],
-          url: record.fields['URL']
-        });
-      });
-      resolve(content);
-    });
-  });
-}
-function updateInfo(content) {
-  content.forEach(function (stroke) {
-    createTestsTeaserCard(stroke);
-  });
-}
-function createTestsTeaserCard(stroke) {
-  var title = stroke.title,
-    description = stroke.description,
-    image = stroke.image,
-    url = stroke.url;
-  var card = document.createElement('a');
-  card.href = url;
-  card.classList.add('W_TestTeaser');
-  var textContent = document.createElement('div');
-  textContent.classList.add('M_TestTeaserContent');
-  var header = document.createElement('h4');
-  header.innerText = title;
-  header.classList.add('A_TestTeaserHeader');
-  var text = document.createElement('p');
-  text.innerText = description;
-  text.classList.add('A_TestTeaserDescription');
-  var icon = document.createElement('div');
-  icon.classList.add('A_TestTeaserIcon');
-  var imageUrl = '';
-  if (Array.isArray(image) && image.length > 0) {
-    imageUrl = image[0].url;
-  } else if (typeof image === 'string') {
-    imageUrl = image;
-  }
-  if (imageUrl) {
-    icon.style.backgroundImage = "url(".concat(imageUrl, ")");
-  }
-  textContent.appendChild(header);
-  textContent.appendChild(text);
-  card.appendChild(textContent);
-  card.appendChild(icon);
-  var container = document.querySelector('.C_DTests');
-  if (container) {
-    container.appendChild(card);
-  }
-}
-
-
-/***/ }
+/***/ })
 
 /******/ 	});
 /************************************************************************/
