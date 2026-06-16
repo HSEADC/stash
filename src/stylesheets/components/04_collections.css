@@ -147,7 +147,8 @@
 }
 
 [class^='C_Pic'],
-[class^='Q_Pic'] {
+[class^='Q_Pic'],
+[class^='Q_PicW'] {
   position: relative;
   width: 100%;
   height: auto;
@@ -156,6 +157,16 @@
   display: flex;
   gap: 2%;
 }
+
+/* [class^='Q_PicW'] {
+  position: relative;
+  width: 20%;
+  height: auto;
+
+  margin: 3% 0;
+  display: flex;
+  gap: 2%;
+} */
 
 .C_FullMenuArticles::-webkit-scrollbar {
   display: none;
