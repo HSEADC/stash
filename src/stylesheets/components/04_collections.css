@@ -113,9 +113,10 @@
   width: 100%;
 }
 
-/* _____________________________articles_____________________________ */
+/* _____________________________articles, styleguide_____________________________ */
 
-.C_FullMenuArticles {
+.C_FullMenuArticles,
+.C_FullMenuStyles {
   position: sticky;
   width: 50%;
   height: fit-content;
@@ -141,6 +142,9 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+.C_FullMenuStyles {
+  width: 30%;
+}
 
 .C_FullMenuArticles:hover {
   overflow-y: auto;
@@ -157,16 +161,6 @@
   display: flex;
   gap: 2%;
 }
-
-/* [class^='Q_PicW'] {
-  position: relative;
-  width: 20%;
-  height: auto;
-
-  margin: 3% 0;
-  display: flex;
-  gap: 2%;
-} */
 
 .C_FullMenuArticles::-webkit-scrollbar {
   display: none;
