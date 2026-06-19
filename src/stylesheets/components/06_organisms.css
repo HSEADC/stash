@@ -248,9 +248,10 @@
   z-index: 2;
 }
 
-/* _____________________________articles_____________________________ */
+/* _____________________________articles, styleguide_____________________________ */
 
-.O_ArticleRead {
+.O_ArticleRead,
+.O_StyleguideRead {
   position: relative;
   width: 100%;
 
@@ -263,12 +264,29 @@
 
   height: fit-content;
 }
-.O_ArticleRead h5 {
+.O_ArticleRead h5,
+.O_StyleguideRead h4,
+.O_StyleguideRead h5 {
   font-family: 'arial narrow';
   color: #0037ff;
   font-size: 30px;
   font-weight: 400;
   line-height: 110%;
+}
+.O_StyleguideRead h4,
+.O_StyleguideRead h5 {
+  font-size: 25px;
+}
+.O_StyleguideRead h4 {
+  font-weight: 700;
+}
+.O_StyleguideRead h1 {
+  font-family: 'arial narrow italic';
+  font-weight: 700;
+  font-size: 100px;
+  color: #0037ff;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .O_ArticleRead2,

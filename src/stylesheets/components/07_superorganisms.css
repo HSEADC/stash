@@ -89,9 +89,10 @@
   padding: 5% 0 20%;
 }
 
-/* _____________________________articles_____________________________ */
+/* _____________________________articles, styleguide_____________________________ */
 
-.S_DArticles {
+.S_DArticles,
+.S_DStyleguide {
   position: relative;
   display: flex;
 
@@ -102,6 +103,9 @@
   margin-top: -2%;
 
   height: fit-content;
+}
+.S_DStyleguide {
+  background-color: #557aff;
 }
 
 /* _____________________________websites_____________________________ */

@@ -280,8 +280,53 @@ a.M_AboutUsMenuLinks img {
   margin: -7% auto;
 }
 
-/* _____________________________articles_____________________________ */
+/* _____________________________articles, styleguide_____________________________ */
+.M_DStylesWindow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2% 0;
 
+  text-align: center;
+  align-items: center;
+
+  box-shadow: 5px 5px 5px 0px #0037ff;
+  background-color: #dedcff;
+  border-radius: 12px;
+
+  margin-bottom: 5%;
+}
+.M_DStylesWindow h5 {
+  font-size: 25px;
+  font-family: 'arial narrow';
+  font-weight: 400;
+  color: #0037ff;
+
+  margin-bottom: 3%;
+}
+[class^='M_BigStyle'] {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 5%;
+
+  text-align: center;
+  align-items: center;
+
+  box-shadow: 5px 5px 5px 0px #0037ff;
+  background-color: #dedcff;
+  border-radius: 12px;
+
+  margin-bottom: 5%;
+}
+[class^='M_BigStyle'] h5 {
+  font-size: 25px;
+  font-family: 'arial narrow';
+  font-weight: 400;
+  color: #0037ff;
+}
 .M_D1ArticlesWindows,
 .M_D2ArticlesWindows,
 .M_D3ArticlesWindows,
