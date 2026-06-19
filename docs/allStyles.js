@@ -27,6 +27,24 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('img').forEach(function (img) {
     img.setAttribute('loading', 'lazy');
   });
+  var nav = document.querySelector('.C_FullMenuStyles');
+  if (nav) {
+    nav.addEventListener('click', function (e) {
+      var menuItem = e.target.closest('[class^="M_BigStyle"]');
+      if (!menuItem) return;
+      var targetId = menuItem.dataset.target;
+      if (!targetId) return;
+      var targetElement = document.getElementById(targetId);
+      if (!targetElement) return;
+      var offset = 30;
+      var elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      var offsetPosition = elementPosition - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    });
+  }
 });
 /******/ })()
 ;
