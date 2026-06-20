@@ -60,6 +60,31 @@ const htmlPages = [
     './pages/interact/tests/test1.html',
     ['test1', 'allStyles']
   ),
+  createPages(
+    './src/pages/interact/tests/test1.html',
+    './pages/interact/tests/test1.html',
+    ['test2', 'allStyles']
+  ),
+  createPages(
+    './src/pages/interact/tests/test1.html',
+    './pages/interact/tests/test1.html',
+    ['test3', 'allStyles']
+  ),
+  createPages(
+    './src/pages/interact/tests/test1.html',
+    './pages/interact/tests/test1.html',
+    ['test4', 'allStyles']
+  ),
+  createPages(
+    './src/pages/interact/tests/test1.html',
+    './pages/interact/tests/test1.html',
+    ['test5', 'allStyles']
+  ),
+  createPages(
+    './src/pages/interact/tests/test1.html',
+    './pages/interact/tests/test1.html',
+    ['test6', 'allStyles']
+  ),
   createPages('./src/pages/archive/hacks.html', './pages/archive/hacks.html', [
     'allStyles'
   ]),
