@@ -13,12 +13,7 @@ module.exports = {
   entry: {
     index: './src/js/index.js',
     tests: './src/js/tests.js',
-    test1: './src/js/test1.js',
-    test2: './src/js/test1.js',
-    test3: './src/js/test1.js',
-    test4: './src/js/test1.js',
-    test5: './src/js/test1.js',
-    test6: './src/js/test1.js',
+    test: './src/js/test.js',
     articles: './src/js/articles.js',
     allStyles: './src/js/allStyles.js',
     websites: './src/js/websites.js',
