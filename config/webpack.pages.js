@@ -58,32 +58,32 @@ const htmlPages = [
   createPages(
     './src/pages/interact/tests/test1.html',
     './pages/interact/tests/test1.html',
-    ['test1', 'allStyles']
+    ['test', 'allStyles']
   ),
   createPages(
     './src/pages/interact/tests/test2.html',
     './pages/interact/tests/test2.html',
-    ['test2', 'allStyles']
+    ['test', 'allStyles']
   ),
   createPages(
     './src/pages/interact/tests/test3.html',
     './pages/interact/tests/test3.html',
-    ['test3', 'allStyles']
+    ['test', 'allStyles']
   ),
   createPages(
     './src/pages/interact/tests/test4.html',
     './pages/interact/tests/test4.html',
-    ['test4', 'allStyles']
+    ['test', 'allStyles']
   ),
   createPages(
     './src/pages/interact/tests/test5.html',
     './pages/interact/tests/test5.html',
-    ['test5', 'allStyles']
+    ['test', 'allStyles']
   ),
   createPages(
     './src/pages/interact/tests/test6.html',
     './pages/interact/tests/test6.html',
-    ['test6', 'allStyles']
+    ['test', 'allStyles']
   ),
   createPages('./src/pages/archive/hacks.html', './pages/archive/hacks.html', [
     'allStyles'
