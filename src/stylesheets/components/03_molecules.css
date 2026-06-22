@@ -593,6 +593,10 @@ a.M_AboutUsMenuLinks img {
 .M_AnswerMassage {
   width: 100%;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border-bottom-right-radius: 28.66px;
   border-bottom-left-radius: 28.66px;
 
@@ -603,6 +607,10 @@ a.M_AboutUsMenuLinks img {
     #274aca 96.15%
   );
   box-shadow: 3.74px 4.98px 11.22px 1.25px #192966cc;
+
+  min-height: 80px;
+
+  padding: 0 10px;
 }
 
 .M_TestResult {

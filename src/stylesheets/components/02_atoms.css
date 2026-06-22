@@ -101,16 +101,25 @@
   display: none;
 }
 .A_AnswerText {
-  font-size: 27px;
+  /* font-size: 27px;
   font-weight: 400;
   color: #0037ff;
 
   display: block;
-  padding: 1% 2% 15%;
+  padding: 2% 2% 25%;
   cursor: pointer;
   text-align: center;
 
-  max-height: 13vh;
+  max-height: 13vh; */
+
+  font-size: 27px;
+  font-weight: 400;
+  color: #0037ff;
+  text-align: center;
+
+  padding: 3% 0;
+  max-width: 90%;
+  word-break: break-word;
 }
 
 input[type='radio']:checked + .A_AnswerText {
