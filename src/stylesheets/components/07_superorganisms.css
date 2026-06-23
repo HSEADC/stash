@@ -196,37 +196,40 @@
 /* games___________  */
 
 .paintbox {
-  width: calc(1000vw / 24);
-  height: calc(1000vw / 24);
-  overflow: hidden;
   position: absolute;
-  right: calc(100vw / 24);
-  top: calc(100vw / 24);
-  display: flex;
+  right: calc(100vw / 8);
+  top: calc(100vw / 15);
+  width: calc(1000vw / 30);
+  height: calc(1000vw / 30);
+  overflow: hidden;
+  z-index: 10000;
 }
 
 .paint {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .canva-paint {
   position: absolute;
-}
-
-.block {
-  width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .color-palette {
-  width: calc(257.5vw / 24);
-  height: calc(100vw / 24);
-  overflow: hidden;
   position: absolute;
   bottom: 3%;
   left: 3%;
+  width: calc(257.5vw / 24);
+  height: calc(100vw / 24);
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -277,4 +280,212 @@
 
 .color10 {
   background-color: #cc00ff;
+}
+
+/* игра 4 */
+
+.game-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 92px;
+  overflow: hidden;
+}
+
+.nickname-game {
+  width: 90%;
+  max-width: 700px;
+  padding: 2% 4%;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  border: 2px solid #00ff99;
+  box-shadow:
+    0 0 50px #00ff99,
+    inset 0 0 20px #00ff99;
+  border-radius: 20px;
+  text-align: center;
+  color: #00ff99;
+}
+
+.game-header h2 {
+  font-size: clamp(1.4rem, 4vw, 2.8rem);
+  margin: 0;
+  letter-spacing: 3px;
+  color: #ff00cc;
+  text-shadow:
+    0 0 20px #ff00cc,
+    0 0 40px #ff00cc;
+}
+.game-header .subheader {
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+  color: #66ffaa;
+  text-shadow: 0 0 10px #66ffaa;
+  margin: 2px 0 15px;
+}
+
+.nickname-display {
+  background: #111;
+  border: 2px solid #00ff99;
+  box-shadow: 0 0 30px #00ff99 inset;
+  padding: 3% 5%;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  min-height: 70px;
+}
+
+#nicknameText {
+  font-size: clamp(1.2rem, 5vw, 2.8rem);
+  font-weight: bold;
+  word-break: break-all;
+  color: #ff00cc;
+  text-shadow: 0 0 15px #ff00cc;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.score-badge {
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
+  background: #00ff99;
+  color: #000;
+  padding: 4px 14px;
+  border-radius: 30px;
+  white-space: nowrap;
+  box-shadow: 0 0 20px #00ff99;
+  font-weight: bold;
+}
+
+.game-controls {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-controls button {
+  background: #111;
+  color: #00ff99;
+  border: 2px solid #00ff99;
+  padding: 12px 28px;
+  font-family: inherit;
+  font-size: clamp(0.8rem, 1.8vw, 1.4rem);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00ff99;
+}
+.game-controls button:hover {
+  background: #00ff99;
+  color: #000;
+  box-shadow: 0 0 40px #00ff99;
+}
+.game-controls .reset-btn {
+  border-color: #ff00cc;
+  color: #ff00cc;
+  box-shadow: 0 0 15px #ff00cc;
+}
+.game-controls .reset-btn:hover {
+  background: #ff00cc;
+  color: #000;
+}
+
+.nickname-status,
+.nickname-signature {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+  padding: 8px 0;
+  border-top: 1px dashed #00ff99;
+  margin-top: 8px;
+}
+.nickname-signature {
+  border-top: none;
+  border-bottom: 1px dashed #00ff99;
+  margin-bottom: 5px;
+}
+.nickname-status span,
+.nickname-signature span {
+  color: #ffcc00;
+  text-shadow: 0 0 8px #ffcc00;
+}
+
+/* игра 5 аквариум */
+/* --- Контейнер игры --- */
+.aquarium-game {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 92px; /* подгоняем под родительский */
+  background: #0a3b5c; /* запасной цвет, если фон не загрузится */
+}
+
+/* --- Фон --- */
+.aquarium-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+  z-index: 0;
+}
+
+/* --- Зона смены фона (правый нижний угол) --- */
+.bg-changer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  height: 25%;
+  z-index: 10;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05); /* едва заметная область */
+  border-radius: 50% 0 0 0;
+  transition: background 0.2s;
+}
+.bg-changer:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* --- Контейнер для объектов аквариума --- */
+.aquarium-objects {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* --- Стили для каждого предмета --- */
+.aquarium-item {
+  position: absolute;
+  cursor: pointer;
+  width: 10%; /* базовый размер, будет переопределён в JS для каждого предмета */
+  height: auto;
+  transition: transform 0.15s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.aquarium-item:hover {
+  transform: scale(1.1);
+}
+.aquarium-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none; /* чтобы клик ловился на родителе */
 }
