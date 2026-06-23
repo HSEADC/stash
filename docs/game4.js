@@ -1,55 +1,74 @@
 /******/ (() => { // webpackBootstrap
 document.addEventListener('DOMContentLoaded', function () {
-  var canvas = document.querySelector('.canva-paint');
-  var ctx = canvas.getContext('2d');
-  var drawing = false;
-  var lastX, lastY;
-  var colorButtons = document.querySelectorAll('.color-button');
-  colorButtons.forEach(function (div) {
-    div.addEventListener('click', function () {
-      var color = window.getComputedStyle(div).backgroundColor;
-      setColor(color);
-    });
-  });
-  function setColor(color) {
-    currentColor = color;
-    ctx.strokeStyle = currentColor;
+  var nicknameText = document.getElementById('nicknameText');
+  var nicknameScore = document.getElementById('nicknameScore');
+  var statusText = document.getElementById('statusText');
+  var signatureText = document.getElementById('signatureText');
+  var generateBtn = document.getElementById('generateBtn');
+  var resetBtn = document.getElementById('resetBtn');
+  var partsStart = ['ЛамП', 'кибер', 'мяу', 'xX', 'глитч', 'нн', 'КрИп', '404', 'vamp', 'лол', 'Тролль', 'Хакер', 'Пиксель', 'Байт', '0x', 'Кот', 'Андед', 'Спектр', 'Мут', 'Флуд'];
+  var partsMiddle = ['ов@', 'ушк', '_нн', 'Rш', 'zZ', 'чик', '0чк', '_web', 'пикс', '_x', 'у4к', '0n', '_к0т', 'Zzz', 'чип', 'м@н', 'та', 'кр@б', '_ву', 'ХЗ'];
+  var partsEnd = ['4а', '666', '2007', '_ru', 'чка', 'xX', '!!!', '89', 'ня', '_top', 'б0т', 'мол', 'f4n', 'я_', '1999', '3000', '_bI', 'л0л', 'у4а', 'XxX'];
+  var symbols = ['@', '_', '.', 'x', 'X', '0', '4', '7', '#', '$', '&'];
+  function randomItem(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
   }
-  ctx.lineWidth = 3;
-  ctx.lineCap = 'round';
-  ctx.globalCompositeOperation = 'source-over';
-  canvas.addEventListener('mousedown', function (e) {
-    drawing = true;
-    lastX = e.clientX - canvas.getBoundingClientRect().left;
-    lastY = e.clientY - canvas.getBoundingClientRect().top;
-    ctx.beginPath();
-    ctx.moveTo(lastX, lastY);
-    document.addEventListener('mousemove', mouseMoveHandler);
-    document.addEventListener('mouseup', mouseUpHandler);
-  });
-  function mouseMoveHandler(e) {
-    if (!drawing) return;
-    var x = e.clientX - canvas.getBoundingClientRect().left;
-    var y = e.clientY - canvas.getBoundingClientRect().top;
-    ctx.lineTo(x, y);
-    ctx.stroke();
-    lastX = x;
-    lastY = y;
+  function randomUpperLower(text) {
+    return text.split('').map(function (ch) {
+      return Math.random() > 0.5 ? ch.toUpperCase() : ch.toLowerCase();
+    }).join('');
   }
-  function mouseUpHandler() {
-    drawing = false;
-    ctx.closePath();
-    document.removeEventListener('mousemove', mouseMoveHandler);
-    document.removeEventListener('mouseup', mouseUpHandler);
+  function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  document.querySelector('.window-1').addEventListener('click', function () {
-    window.open('https://hseadc.github.io/dikiioguretz/', '_blank');
-  });
-  document.querySelectorAll('.window-2').forEach(function (el) {
-    el.addEventListener('click', function () {
-      window.open('https://t.me/oldweb_core', '_blank');
-    });
-  });
+  function rateNickname(nick) {
+    var score = 0;
+    if (nick.includes('@')) score += 10;
+    if (nick.includes('_')) score += 5;
+    if (nick.includes('666')) score += 20;
+    if (nick.includes('404')) score += 20;
+    if (nick.includes('xX')) score += 8;
+    if (nick.includes('!')) score += 6;
+    if (nick.length > 12) score += 10;
+    if (nick.length < 6) score += 5;
+    if (/[A-Z]/.test(nick) && /[a-z]/.test(nick)) score += 8;
+    if (/\d/.test(nick)) score += 7;
+    if (nick.includes('_') && nick.includes('@')) score += 5;
+    if (nick.includes('2007') || nick.includes('1999')) score += 15;
+    if (nick.includes('XxX') || nick.includes('xXx')) score += 10;
+    return Math.min(score, 100);
+  }
+  function generateStatus(nick) {
+    var statuses = ['онлайн', 'невидимка', 'афк', 'играю в Doom', 'жру попкорн', 'чиню модем', 'скачиваю MP3', 'пишу в гостевой', 'плачу на аську', 'жду ответа', 'залипаю в паинте', 'смотрю флеш-ролик'];
+    return randomItem(statuses);
+  }
+  function generateSignature(nick) {
+    var signatures = ['~ ℓσνє ιѕ αи ιℓℓυѕιση ~', '₪ я нє ςρє∂ηιй, я - тωσιηкš ₪', '♥ ƒяєє∂σм ιѕ мιηє ♥', '© 2006 все права защищены', 'ɢʟɪᴛᴄʜ ɪɴ ᴛʜᴇ ᴍᴀᴛʀɪx', '我只想要自由', '₪ ₪ ₪ ₪ ₪', 'люблю печеньки 🍪', 'никнейм создан генератором 2009', 'я не робот, я – человек-паук'];
+    return randomItem(signatures);
+  }
+  function generateNickname() {
+    var nick = randomItem(partsStart) + randomItem(partsMiddle) + randomItem(partsEnd);
+    if (Math.random() > 0.4) {
+      nick += randomItem(symbols) + randomInt(1, 999);
+    }
+    nick = randomUpperLower(nick);
+    var score = rateNickname(nick);
+    var status = generateStatus(nick);
+    var signature = generateSignature(nick);
+    nicknameText.textContent = nick;
+    nicknameScore.textContent = "".concat(score, "/100 \uD83D\uDD25");
+    statusText.textContent = "\u0441\u0442\u0430\u0442\u0443\u0441: ".concat(status);
+    signatureText.textContent = "\u043F\u043E\u0434\u043F\u0438\u0441\u044C: ".concat(signature);
+  }
+  function resetGame() {
+    nicknameText.textContent = 'жми кнопку';
+    nicknameScore.textContent = '';
+    statusText.textContent = 'статус: не определён';
+    signatureText.textContent = 'подпись: ...';
+  }
+  generateBtn.addEventListener('click', generateNickname);
+  resetBtn.addEventListener('click', resetGame);
+  generateNickname();
 });
 /******/ })()
 ;
