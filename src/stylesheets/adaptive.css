@@ -1265,6 +1265,40 @@
       font-size: 4.2rem;
     }
   }
+
+  .nickname-game {
+    width: 95%;
+  }
+  .nickname-display {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #nicknameText {
+    margin-right: 0;
+    font-size: 5rem;
+  }
+  .game-wrapper {
+    border-radius: 39px;
+    padding-top: 16%;
+  }
+  .score-badge {
+    font-size: 2.5rem;
+  }
+
+  .game-controls button {
+    padding: 3% 2%;
+
+    font-size: 2.6rem;
+  }
+  .nickname-status span,
+  .nickname-signature span {
+    font-size: 3rem;
+  }
+  .nickname-status,
+  .nickname-signature {
+    padding: 5px 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
