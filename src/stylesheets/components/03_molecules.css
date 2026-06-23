@@ -23,7 +23,7 @@ a.M_MainMenuDesktopMoleculeInteract {
   justify-content: space-between;
   text-decoration: none;
 
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
   margin-top: -2px;
 }
@@ -48,7 +48,7 @@ a.M_MainMenuDesktopMolecule {
 /* _____________________________index page, archive page_____________________________ */
 
 .M_DArchiveIcon figcaption {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .M_DBigIcon,
 .M_DArchiveIcon {
@@ -62,7 +62,7 @@ a.M_MainMenuDesktopMolecule {
 }
 .M_DBigIcon figcaption,
 .M_DArchiveIcon figcaption {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
   color: white;
   text-decoration: none;
@@ -84,7 +84,7 @@ a.M_MainMenuDesktopMolecule {
 .M_IndexCalendar h1 {
   color: #0037ff;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: 'arial narrow';
   text-align: center;
 }
@@ -106,7 +106,7 @@ a.M_MainMenuDesktopMolecule {
 #my-form h1 {
   color: #fff;
   margin-bottom: 6%;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 700;
   font-family: 'arial narrow';
 }
@@ -118,10 +118,10 @@ a.M_MainMenuDesktopMolecule {
   border-radius: 14px;
   margin-right: 2%;
   border: none;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   outline: none;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 1.875rem;
   box-sizing: border-box;
   box-shadow: 7px 7px 7px 0px #0037ff4f;
 }
@@ -137,7 +137,7 @@ a.M_MainMenuDesktopMolecule {
   width: 36%;
   height: 40%;
   border-radius: 14px;
-  font-size: 30px;
+  font-size: 1.875rem;
   border: none;
   cursor: pointer;
   font-weight: 400;
@@ -145,7 +145,7 @@ a.M_MainMenuDesktopMolecule {
 }
 #my-form-status {
   color: #0037ff;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   margin-top: 3%;
 }
@@ -158,13 +158,13 @@ a.M_MainMenuDesktopMolecule {
   justify-content: space-between;
 }
 .M_FooterInfo h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #0037ff;
   margin-bottom: 8%;
 }
 .M_FooterInfo p {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-family: 'arial narrow italic';
   font-weight: 700;
   color: #0037ff;
@@ -192,7 +192,7 @@ a.M_MainMenuDesktopMolecule {
 .M_DInteractiveIcon figcaption {
   margin-top: -2%;
   margin-bottom: 10%;
-  font-size: 32px;
+  font-size: 2rem;
   color: white;
 }
 .M_DInteractiveIcon a {
@@ -240,7 +240,7 @@ a.M_AboutUsMenuLinks {
   box-shadow: 2.77px 3.7px 8.32px 0.92px #192966cc;
   cursor: pointer;
   color: #0037ff;
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-weight: 400;
 }
 
@@ -264,7 +264,7 @@ a.M_AboutUsMenuLinks img {
 }
 
 .M_TeamStash h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: 'arial narrow';
   font-weight: 400;
   color: #0037ff;
@@ -298,7 +298,7 @@ a.M_AboutUsMenuLinks img {
   margin-bottom: 5%;
 }
 .M_DStylesWindow h5 {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-family: 'arial narrow';
   font-weight: 400;
   color: #0037ff;
@@ -322,7 +322,7 @@ a.M_AboutUsMenuLinks img {
   margin-bottom: 5%;
 }
 [class^='M_BigStyle'] h5 {
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-family: 'arial narrow';
   font-weight: 400;
   color: #0037ff;
@@ -418,7 +418,7 @@ a.M_AboutUsMenuLinks img {
 .M_D20ArticlesWindows h5,
 .M_D21ArticlesWindows h5,
 .M_D22ArticlesWindows h5 {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-family: 'arial narrow';
   font-weight: 400;
   color: #0037ff;
@@ -506,7 +506,7 @@ a.M_AboutUsMenuLinks img {
 }
 
 [class^='O_ArticleRead'] h2 {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-family: 'arial narrow';
   font-weight: 700;
   color: #0037ff;
@@ -543,7 +543,7 @@ a.M_AboutUsMenuLinks img {
 .M_DRubricators a {
   text-decoration: none;
   color: #0037ff;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
@@ -586,7 +586,7 @@ a.M_AboutUsMenuLinks img {
 
 .M_DProgressBar {
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   background-color: #3c34db;
   margin-bottom: 2%;
 }
@@ -608,9 +608,9 @@ a.M_AboutUsMenuLinks img {
   );
   box-shadow: 3.74px 4.98px 11.22px 1.25px #192966cc;
 
-  min-height: 80px;
+  min-height: 5rem;
 
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 
 .M_TestResult {
@@ -640,7 +640,7 @@ a.M_AboutUsMenuLinks img {
   position: relative;
   width: 90%;
   margin: 0 auto 2%;
-  height: 60px;
+  height: 3.75rem;
   background: linear-gradient(
     90deg,
     #ff0000 9.84%,

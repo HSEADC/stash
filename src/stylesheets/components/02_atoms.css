@@ -2,7 +2,7 @@
 
 .A_MainMenuText {
   color: #0037ff;
-  padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
   white-space: nowrap;
 }
 .A_MainMenuText,
@@ -36,7 +36,7 @@
   );
   border-radius: 20px;
 
-  font-size: 27px;
+  font-size: 1.6875rem;
   width: 50%;
   align-items: center;
   text-align: center;
@@ -50,7 +50,7 @@
 
 .A_TestTeaserHeader {
   color: #0037ff;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
   background: linear-gradient(180deg, #ffffff 48.49%, #0037ff 135.28%);
 
@@ -59,7 +59,7 @@
 
 .A_TestTeaserDescription {
   color: #0037ff;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -1.1%;
@@ -86,7 +86,7 @@
 
 .A_Question {
   text-align: left;
-  font-size: 35px;
+  font-size: 35px !important;
   font-weight: 700;
   color: #0037ff;
   background: linear-gradient(180deg, #ffffff 48.49%, #0037ff 135.28%);
@@ -101,18 +101,7 @@
   display: none;
 }
 .A_AnswerText {
-  /* font-size: 27px;
-  font-weight: 400;
-  color: #0037ff;
-
-  display: block;
-  padding: 2% 2% 25%;
-  cursor: pointer;
-  text-align: center;
-
-  max-height: 13vh; */
-
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-weight: 400;
   color: #0037ff;
   text-align: center;
@@ -137,12 +126,12 @@ input[type='radio']:checked + .A_AnswerText {
 }
 
 .A_TestResultCount {
-  font-size: 70px;
+  font-size: 4.375rem;
   font-weight: 700;
   padding: 1%;
 }
 .A_TestResultParagraph {
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 700;
 
   background: linear-gradient(180deg, #ffffff 48.49%, #0037ff 135.28%);
@@ -166,7 +155,7 @@ input[type='radio']:checked + .A_AnswerText {
   color: #0037ff;
   padding: 1.2% 3%;
   border-radius: 50px;
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-weight: 400;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
@@ -253,7 +242,7 @@ input[type='radio']:checked + .A_AnswerText {
   padding: 3.5% 6%;
   box-sizing: border-box;
 
-  font-size: 30px;
+  font-size: 1.875rem;
   font-family: 'arial narrow', sans-serif;
   font-weight: 400;
   color: #0037ff;
@@ -267,7 +256,7 @@ input[type='radio']:checked + .A_AnswerText {
 }
 
 .A_SearchInput::placeholder {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-family: 'arial narrow', sans-serif;
   font-weight: 400;
   color: #0037ff;

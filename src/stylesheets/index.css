@@ -1,4 +1,4 @@
-@import 'reset.css';
+/* @import 'reset.css';
 @import 'fonts.css';
 
 * {
@@ -11,6 +11,28 @@ html {
 body {
   font-family: 'arial narrow', Arial, Helvetica, sans-serif;
   font-size: 14rem;
+}
+.swiper {
+  width: 100%;
+  max-height: 40vw;
+}
+.swiper-pagination-bullet-active {
+  background: #3a7bd5;
+} */
+
+@import 'reset.css';
+@import 'fonts.css';
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(100vw / 1440 * 16);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'arial narrow', Arial, Helvetica, sans-serif;
+  font-size: 1rem; /* 16px */
 }
 .swiper {
   width: 100%;
