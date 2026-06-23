@@ -56,22 +56,22 @@ const htmlPages = [
     ['game', 'allStyles']
   ),
   createPages(
-    './src/pages/interact/games/game2.html',
+    './src/pages/interact/games/game3.html',
     './pages/interact/games/game3.html',
     ['game', 'allStyles']
   ),
   createPages(
-    './src/pages/interact/games/game2.html',
+    './src/pages/interact/games/game4.html',
     './pages/interact/games/game4.html',
     ['game', 'allStyles']
   ),
   createPages(
-    './src/pages/interact/games/game2.html',
+    './src/pages/interact/games/game5.html',
     './pages/interact/games/game5.html',
     ['game', 'allStyles']
   ),
   createPages(
-    './src/pages/interact/games/game2.html',
+    './src/pages/interact/games/game6.html',
     './pages/interact/games/game6.html',
     ['game', 'allStyles']
   ),
