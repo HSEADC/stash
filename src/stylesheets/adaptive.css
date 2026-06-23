@@ -135,6 +135,9 @@
   }
   .M_MAboutProjectName h1 {
     padding-top: 4%;
+    font-size: 5rem;
+    color: #0037ff;
+    font-weight: 700;
   }
   .O_MAboutProject p {
     background: linear-gradient(179.98deg, #fff 63.37%, #0037ff 128.17%);
@@ -167,6 +170,9 @@
     width: 28%;
     margin: 0;
   }
+  .M_DBigIcon figcaption {
+    font-size: 4rem;
+  }
   .M_DBigIcon img {
     width: 100%;
     height: auto;
@@ -182,7 +188,17 @@
     padding: 2%;
     margin-bottom: 25%;
   }
+  .O_DYellowNote h1,
+  .O_DYellowNoteArch h1 {
+    font-size: 5rem;
+    padding: 5% 2%;
+  }
 
+  .O_DYellowNote p,
+  .O_DYellowNoteArch p {
+    font-size: 3.25rem;
+    padding: 5% 2%;
+  }
   .Q_M2Coco {
     width: 40%;
     height: auto;
@@ -208,6 +224,9 @@
     text-align: center;
     position: relative;
     top: 0;
+  }
+  .M_IndexCalendar h1 {
+    font-size: 4.5rem;
   }
   .Q_D1Green {
     width: 40%;
@@ -316,12 +335,15 @@
 
   #my-form h1 {
     margin-bottom: 4%;
+    font-size: 4.5rem;
   }
   #my-form input {
     padding: 2%;
+    font-size: 3.5rem;
   }
   #my-form-button {
     padding: 2%;
+    font-size: 3.5rem;
   }
   #my-form-status {
     margin: 3% 1%;
@@ -332,6 +354,10 @@
   .M_FooterInfo h1 {
     padding: 2% 0 5%;
     margin: 0;
+    font-size: 4.5rem;
+  }
+  .M_FooterInfo p {
+    font-size: 3rem;
   }
   .Q_Logo1 {
     width: 16%;
@@ -400,6 +426,7 @@
   }
   .O_DMiniYellowNote h1 {
     padding: 11% 10% 0 5%;
+    font-size: 6.5rem;
   }
 
   .S_DInteractive {
@@ -422,11 +449,13 @@
   .O_DInteractiveWindow2 h1 {
     background: linear-gradient(180deg, #fff 48.49%, #0037ff 135.28%);
     padding: 3% 2%;
+    font-size: 4rem;
   }
   .O_DInteractiveWindow1 p,
   .O_DInteractiveWindow2 p {
     background: linear-gradient(179.98deg, #fff 63.37%, #0037ff 128.17%);
     padding: 2% 5% 2% 2%;
+    font-size: 2.7rem;
   }
 
   .C_InteractiveIcons {
@@ -454,6 +483,9 @@
     display: block;
     margin: 0 auto;
   }
+  .M_DInteractiveIcon figcaption {
+    font-size: 4.5rem;
+  }
 
   .S_DAboutUs {
     background-image: url(../images/Q.BACKGROUND\(US\)TABLET1.svg);
@@ -471,9 +503,11 @@
   }
   .O_DBlueNote h1 {
     padding: 4% 12%;
+    font-size: 4.5rem;
   }
   .O_DBlueNote p {
     padding: 1% 4% 0;
+    font-size: 2.6rem;
   }
 
   .Q_D3Bubles {
@@ -511,9 +545,11 @@
   .M_TeamStash {
     background: linear-gradient(180deg, #fff 48.49%, #0037ff 135.28%);
     padding: 4%;
+    font-size: 4.5rem;
   }
   .M_TeamStash h2 {
     padding: 6% 0 0;
+    font-size: 4.5rem;
   }
   .M_TeamStash img {
     width: 20%;
@@ -558,6 +594,7 @@
     padding: 2% 0 6%;
     box-shadow: 2.47px 3.3px 7.41px 0.82px #192966cc;
     border-radius: 0 0 19px 19px;
+    font-size: 3.5rem;
   }
   a.M_AboutUsMenuLinks img {
     width: 40%;
@@ -728,10 +765,53 @@
     width: 100%;
     margin: 3% 0;
   }
+  .M_D1ArticlesWindows h5,
+  .M_D2ArticlesWindows h5,
+  .M_D3ArticlesWindows h5,
+  .M_D4ArticlesWindows h5,
+  .M_D5ArticlesWindows h5,
+  .M_D6ArticlesWindows h5,
+  .M_BigArticle1 h5,
+  .M_BigArticle2 h5,
+  .M_BigArticle3 h5,
+  .M_BigArticle4 h5,
+  .M_D8ArticlesWindows h5,
+  .M_D9ArticlesWindows h5,
+  .M_D10ArticlesWindows h5,
+  .M_D11ArticlesWindows h5,
+  .M_D12ArticlesWindows h5,
+  .M_D13ArticlesWindows h5,
+  .M_D14ArticlesWindows h5,
+  .M_D15ArticlesWindows h5,
+  .M_D16ArticlesWindows h5,
+  .M_D17ArticlesWindows h5,
+  .M_D18ArticlesWindows h5,
+  .M_D19ArticlesWindows h5,
+  .M_D20ArticlesWindows h5,
+  .M_D21ArticlesWindows h5,
+  .M_D22ArticlesWindows h5 {
+    font-size: 5rem;
+  }
 
+  .A_SearchInput {
+    font-size: 5rem;
+    margin-bottom: 5%;
+  }
+  .A_SearchInput::placeholder {
+    font-size: 5rem;
+  }
   .S_DMainSites {
     background-image: url(../images/Q.M2BGA.svg);
     padding-top: 10%;
+  }
+
+  .O_ArticleRead h5,
+  .O_StyleguideRead h4,
+  .O_StyleguideRead h5 {
+    font-size: 2.7rem;
+  }
+  [class^='O_ArticleRead'] h2 {
+    font-size: 3.2rem;
   }
   .M_DRubricators {
     flex-direction: column;
@@ -782,10 +862,12 @@
   }
   .A_TestTeaserHeader {
     padding: 3% 2%;
+    font-size: 4rem;
   }
   .A_TestTeaserDescription {
     padding: 1% 34% 8% 2%;
     max-height: 8vh;
+    font-size: 2.6rem;
   }
   .A_TestTeaserIcon {
     margin-left: -15%;
@@ -803,6 +885,7 @@
     padding: 5% 3%;
     left: 10%;
     margin: 0 3%;
+    font-size: 2.5rem;
   }
   .A_DecorationTopRight {
     top: -15%;
@@ -822,9 +905,11 @@
   }
   .A_AnswerText {
     padding: 3% 2% 12%;
+    font-size: 3.6875rem;
   }
   .A_Question {
-    padding: 4% 2% 10%;
+    padding: 4% 4% 10%;
+    font-size: 5rem !important;
   }
   .C_Answers,
   .C_Answers2 {
@@ -879,8 +964,11 @@
   }
   .A_TestResultParagraph {
     padding-bottom: 20%;
+    font-size: 3rem;
   }
-
+  .A_TestResultCount {
+    font-size: 5rem;
+  }
   .S_GameplayWindow {
     background-image: url(../images/Q.M1BGI.svg);
     flex-direction: column;
@@ -1059,7 +1147,7 @@
     a.M_AboutUsMenuLinks,
     a.M_TeamLinks {
       padding: 4% 0 5%;
-      font-size: 4rem;
+      font-size: 5rem;
     }
 
     .M_D1ArticlesWindows {
@@ -1121,8 +1209,13 @@
       font-size: 5.875rem;
     }
     .A_SearchInput {
+      font-size: 5.875rem;
       margin-bottom: 5%;
     }
+    .A_SearchInput::placeholder {
+      font-size: 5.875rem;
+    }
+
     .O_ArticleRead h5,
     .O_StyleguideRead h4,
     .O_StyleguideRead h5 {
