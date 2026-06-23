@@ -1,14 +1,4 @@
 @media screen and (max-width: 1024px) and (orientation: portrait) {
-  html {
-    font-size: calc(1vw / 10.24);
-    scroll-behavior: smooth;
-  }
-  html,
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
   .Q_DMainGorLine,
   .W_AboutProject,
   .our-gallery,
@@ -65,7 +55,6 @@
   .MainMenuNav.active {
     display: flex;
   }
-
   a.M_MainMenuDesktopMolecule {
     width: 100%;
   }
@@ -136,9 +125,6 @@
     width: 90%;
   }
   .M_MAboutProjectName {
-    color: #0037ff;
-    font-size: 42px;
-    font-weight: 700;
     background: linear-gradient(180deg, #fff 48.49%, #0037ff 135.28%);
     padding: 2%;
     display: flex;
@@ -151,13 +137,13 @@
     padding-top: 4%;
   }
   .O_MAboutProject p {
-    color: #0037ff;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: -1.1%;
     background: linear-gradient(179.98deg, #fff 63.37%, #0037ff 128.17%);
     padding: 2% 5% 8% 2%;
+
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #0037ff;
+    line-height: 150%;
   }
 
   .O_IndexAboutArchive {
@@ -185,10 +171,6 @@
     width: 100%;
     height: auto;
   }
-  .M_DBigIcon figcaption {
-    font-size: 32px;
-    margin-top: 8%;
-  }
 
   .O_DYellowNote,
   .O_DYellowNoteArch {
@@ -200,19 +182,7 @@
     padding: 2%;
     margin-bottom: 25%;
   }
-  .O_DYellowNote h1,
-  .O_DYellowNoteArch h1 {
-    font-size: 42px;
-    padding: 6% 2%;
-  }
-  .O_DYellowNote p {
-    font-size: 30px;
-    padding: 5% 6% 0 3%;
-  }
-  .O_DYellowNoteArch p {
-    font-size: 28px;
-    padding: 7% 6% 0 3%;
-  }
+
   .Q_M2Coco {
     width: 40%;
     height: auto;
@@ -238,10 +208,6 @@
     text-align: center;
     position: relative;
     top: 0;
-  }
-  .M_IndexCalendar h1 {
-    font-size: 42px;
-    padding: 0;
   }
   .Q_D1Green {
     width: 40%;
@@ -349,31 +315,23 @@
   }
 
   #my-form h1 {
-    font-size: 40px;
     margin-bottom: 4%;
   }
   #my-form input {
     padding: 2%;
-    font-size: 32px;
   }
   #my-form-button {
-    font-size: 32px;
     padding: 2%;
   }
   #my-form-status {
-    font-size: 20px;
     margin: 3% 1%;
   }
   .M_FooterInfo {
     margin-top: 2%;
   }
   .M_FooterInfo h1 {
-    font-size: 37px;
     padding: 2% 0 5%;
     margin: 0;
-  }
-  .M_FooterInfo p {
-    font-size: 30px;
   }
   .Q_Logo1 {
     width: 16%;
@@ -417,12 +375,9 @@
     width: 90%;
     gap: 5%;
     top: 0;
-    font-size: 33px;
     padding-bottom: 10%;
   }
-  .M_DArchiveIcon figcaption {
-    font-size: 50px !important;
-  }
+
   .W_Welcome {
     width: 95%;
     margin-bottom: 20%;
@@ -444,9 +399,9 @@
     margin: 0 auto;
   }
   .O_DMiniYellowNote h1 {
-    font-size: 58px;
     padding: 11% 10% 0 5%;
   }
+
   .S_DInteractive {
     top: 0;
     width: 90%;
@@ -465,15 +420,13 @@
   }
   .O_DInteractiveWindow1 h1,
   .O_DInteractiveWindow2 h1 {
-    font-size: 40px;
-    padding: 3% 2%;
     background: linear-gradient(180deg, #fff 48.49%, #0037ff 135.28%);
+    padding: 3% 2%;
   }
   .O_DInteractiveWindow1 p,
   .O_DInteractiveWindow2 p {
-    font-size: 24px;
-    padding: 2% 5% 2% 2%;
     background: linear-gradient(179.98deg, #fff 63.37%, #0037ff 128.17%);
+    padding: 2% 5% 2% 2%;
   }
 
   .C_InteractiveIcons {
@@ -501,12 +454,6 @@
     display: block;
     margin: 0 auto;
   }
-  .M_DInteractiveIcon figcaption {
-    font-size: 40px;
-    color: #fff;
-    margin-top: 10px;
-    font-weight: normal;
-  }
 
   .S_DAboutUs {
     background-image: url(../images/Q.BACKGROUND\(US\)TABLET1.svg);
@@ -523,11 +470,9 @@
     margin-bottom: 20%;
   }
   .O_DBlueNote h1 {
-    font-size: 42px;
     padding: 4% 12%;
   }
   .O_DBlueNote p {
-    font-size: 24px;
     padding: 1% 4% 0;
   }
 
@@ -565,11 +510,9 @@
   .O_DOurScoials h2,
   .M_TeamStash {
     background: linear-gradient(180deg, #fff 48.49%, #0037ff 135.28%);
-    font-size: 42px;
     padding: 4%;
   }
   .M_TeamStash h2 {
-    font-size: 42px;
     padding: 6% 0 0;
   }
   .M_TeamStash img {
@@ -615,7 +558,6 @@
     padding: 2% 0 6%;
     box-shadow: 2.47px 3.3px 7.41px 0.82px #192966cc;
     border-radius: 0 0 19px 19px;
-    font-size: 38px;
   }
   a.M_AboutUsMenuLinks img {
     width: 40%;
@@ -730,41 +672,10 @@
     margin: 3% auto;
   }
 
-  .M_D1ArticlesWindows h5,
-  .M_D2ArticlesWindows h5,
-  .M_D3ArticlesWindows h5,
-  .M_D4ArticlesWindows h5,
-  .M_D5ArticlesWindows h5,
-  .M_D6ArticlesWindows h5,
-  .M_BigArticle1 h5,
-  .M_BigArticle2 h5,
-  .M_BigArticle3 h5,
-  .M_BigArticle4 h5,
-  .M_D8ArticlesWindows h5,
-  .M_D9ArticlesWindows h5,
-  .M_D10ArticlesWindows h5,
-  .M_D11ArticlesWindows h5,
-  .M_D12ArticlesWindows h5,
-  .M_D13ArticlesWindows h5,
-  .M_D14ArticlesWindows h5,
-  .M_D15ArticlesWindows h5,
-  .M_D16ArticlesWindows h5,
-  .M_D17ArticlesWindows h5,
-  .M_D18ArticlesWindows h5,
-  .M_D19ArticlesWindows h5,
-  .M_D20ArticlesWindows h5,
-  .M_D21ArticlesWindows h5,
-  .M_D22ArticlesWindows h5 {
-    font-size: 42px;
-  }
-
   .O_ArticleRead {
     width: 85%;
     margin: 0 auto;
     padding: 2% 3% 5%;
-  }
-  .O_ArticleRead h5 {
-    font-size: 25px;
   }
 
   .M_Lemons {
@@ -795,11 +706,6 @@
     width: 100%;
   }
 
-  .A_SearchInput {
-    font-size: 42px;
-    margin-bottom: 2%;
-  }
-
   .O_ArticleRead2 img,
   .O_ArticleRead3 img,
   .O_ArticleRead4 img,
@@ -823,10 +729,6 @@
     margin: 3% 0;
   }
 
-  [class^='O_ArticleRead'] h2 {
-    font-size: 30px;
-  }
-
   .S_DMainSites {
     background-image: url(../images/Q.M2BGA.svg);
     padding-top: 10%;
@@ -839,7 +741,6 @@
   }
   .M_DRubricators a {
     width: 100%;
-    font-size: 40px;
     background: linear-gradient(
       180deg,
       #fff 41.83%,
@@ -848,9 +749,6 @@
     );
     justify-content: space-between;
     padding: 4% 5%;
-  }
-  .M_DRubricators p {
-    font-size: 30px;
   }
   .A_DMobileRubricator {
     margin-bottom: 4%;
@@ -861,7 +759,6 @@
   .A_WebsitesTeaserFooter {
     width: 60%;
     margin-top: -10%;
-    font-size: 38px;
   }
 
   .C_DSitesTeasers,
@@ -884,11 +781,9 @@
     width: 90%;
   }
   .A_TestTeaserHeader {
-    font-size: 38px;
     padding: 3% 2%;
   }
   .A_TestTeaserDescription {
-    font-size: 24px;
     padding: 1% 34% 8% 2%;
     max-height: 8vh;
   }
@@ -905,7 +800,6 @@
     margin-bottom: 18%;
   }
   .A_ProgressBarIndicator {
-    font-size: 14px;
     padding: 5% 3%;
     left: 10%;
     margin: 0 3%;
@@ -927,11 +821,9 @@
     width: 100%;
   }
   .A_AnswerText {
-    font-size: 28px;
     padding: 3% 2% 12%;
   }
   .A_Question {
-    font-size: 33px;
     padding: 4% 2% 10%;
   }
   .C_Answers,
@@ -985,11 +877,7 @@
     z-index: 100;
     width: 20%;
   }
-  .A_TestResultCount {
-    font-size: 40px;
-  }
   .A_TestResultParagraph {
-    font-size: 30px;
     padding-bottom: 20%;
   }
 
@@ -1021,11 +909,6 @@
   }
 
   @media (max-width: 440px) {
-    html {
-      font-size: calc(1vw / 4.4);
-    }
-
-    /* Индексная страница */
     .Q_D1BGM {
       background-image: url(../images/MAINABOUTMEDIA.svg);
       max-height: 100vh;
@@ -1037,19 +920,16 @@
       padding-bottom: 30%;
     }
 
-    .M_MAboutProjectName {
-      font-size: 27px;
-    }
     .M_MAboutProjectName h1 {
       padding-top: 3%;
-    }
-    .O_MAboutProject p {
-      font-size: 16px;
+      font-size: 5rem;
+      color: #0037ff;
+      font-weight: 700;
     }
 
     .M_DBigIcon figcaption {
-      font-size: 15px;
       margin-top: 5%;
+      font-size: 4rem;
     }
 
     .O_DYellowNote,
@@ -1058,16 +938,16 @@
     }
     .O_DYellowNote h1,
     .O_DYellowNoteArch h1 {
-      font-size: 20px;
-      padding: 3%;
+      padding: 5% 2% 0;
+      font-size: 5rem;
     }
     .O_DYellowNote p {
-      font-size: 14px;
       padding: 12% 6% 0 3%;
+      font-size: 3.5rem;
     }
     .O_DYellowNoteArch p {
-      font-size: 14px;
       padding: 12% 2% 0 3%;
+      font-size: 3.5rem;
     }
 
     .M_IndexCalendar {
@@ -1075,8 +955,8 @@
       top: -5%;
     }
     .M_IndexCalendar h1 {
-      font-size: 32px;
       padding: 2%;
+      font-size: 6rem;
     }
 
     .S_D2AboutMedia {
@@ -1084,43 +964,57 @@
     }
 
     #my-form h1 {
-      font-size: 30px;
+      margin-bottom: 4%;
+      font-size: 6rem;
     }
     #my-form input {
-      font-size: 28px;
+      padding: 2%;
+      font-size: 4rem;
     }
     #my-form-button {
-      font-size: 28px;
+      padding: 2%;
+      font-size: 4rem;
+    }
+    #my-form-status {
+      margin: 3% 1%;
+      font-size: 3rem;
     }
     .M_FooterInfo h1 {
-      font-size: 24px;
       padding: 2% 0;
+      font-size: 6rem;
     }
     .M_FooterInfo p {
-      font-size: 15px;
+      font-size: 3.5625rem;
+      font-family: 'arial narrow italic';
+      font-weight: 700;
+      color: #0037ff;
     }
-
     .S_DInteract {
       background-image: url(../images/Q.M1BGI.svg);
     }
-    .M_DArchiveIcon figcaption {
-      font-size: 33px !important;
-    }
 
     .O_DMiniYellowNote h1 {
-      font-size: 30px;
-      padding: 9% 10% 0 5%;
+      padding: 10% 10% 0 5%;
+      font-size: 6rem;
     }
-
     .O_DInteractiveWindow1 h1,
     .O_DInteractiveWindow2 h1 {
-      font-size: 27px;
+      background: linear-gradient(180deg, #fff 48.49%, #0037ff 135.28%);
+      padding: 3% 2%;
+      font-size: 4.5rem;
     }
     .O_DInteractiveWindow1 p,
     .O_DInteractiveWindow2 p {
-      font-size: 12px;
+      background: linear-gradient(179.98deg, #fff 63.37%, #0037ff 128.17%);
+      padding: 2% 5% 2% 2%;
+      font-size: 2.7rem;
     }
-
+    .M_DInteractiveIcon figcaption {
+      margin-top: -2%;
+      margin-bottom: 10%;
+      color: white;
+      font-size: 6rem;
+    }
     .C_InteractiveIcons {
       margin-left: 5%;
     }
@@ -1136,12 +1030,12 @@
       min-height: 70vh;
     }
     .O_DBlueNote h1 {
-      font-size: 23px;
-      padding: 5% 4%;
+      padding: 5% 5%;
+      font-size: 5rem;
     }
     .O_DBlueNote p {
-      font-size: 16px;
-      padding: 4% 5% 0 4%;
+      padding: 4% 5% 0 5%;
+      font-size: 3.8rem;
     }
     .Q_D2Red {
       right: 2%;
@@ -1155,17 +1049,17 @@
 
     .O_DOurScoials h2,
     .M_TeamStash {
-      font-size: 32px;
       padding: 4%;
+      font-size: 5rem;
     }
     .M_TeamStash h2 {
-      font-size: 32px;
+      font-size: 5rem;
     }
 
     a.M_AboutUsMenuLinks,
     a.M_TeamLinks {
-      font-size: 25px;
       padding: 4% 0 5%;
+      font-size: 4rem;
     }
 
     .M_D1ArticlesWindows {
@@ -1199,7 +1093,6 @@
     .M_D22ArticlesWindows {
       margin: 5% auto;
     }
-
     .M_D1ArticlesWindows h5,
     .M_D2ArticlesWindows h5,
     .M_D3ArticlesWindows h5,
@@ -1225,45 +1118,58 @@
     .M_D20ArticlesWindows h5,
     .M_D21ArticlesWindows h5,
     .M_D22ArticlesWindows h5 {
-      font-size: 30px;
+      font-size: 5.875rem;
     }
-
     .A_SearchInput {
-      font-size: 30px;
       margin-bottom: 5%;
     }
-    .O_ArticleRead h5 {
-      font-size: 18px;
+    .O_ArticleRead h5,
+    .O_StyleguideRead h4,
+    .O_StyleguideRead h5 {
+      font-family: 'arial narrow';
+      color: #0037ff;
+      font-size: 3.5rem;
+      font-weight: 400;
+      line-height: 110%;
     }
     [class^='O_ArticleRead'] h2 {
-      font-size: 22px;
+      font-size: 4rem;
+      font-family: 'arial narrow';
+      font-weight: 700;
+      color: #0037ff;
     }
-
     .S_DMainSites {
       background-image: url(../images/Q.M2BGA.svg);
     }
     .M_DRubricators a {
-      font-size: 30px;
       padding: 3% 5%;
-    }
-    .M_DRubricators p {
-      font-size: 30px;
-    }
-    .A_WebsitesTeaserFooter {
-      font-size: inherit;
     }
 
     .C_DTests,
     .C_DGames {
-      padding-top: 10%;
-    }
-    .A_TestTeaserHeader {
-      font-size: 18px;
+      padding-top: 5%;
     }
     .A_TestTeaserDescription {
-      font-size: 15px;
-      padding: 3% 15% 8% 2%;
-      max-height: 7vh;
+      padding: 3% 20% 8% 2%;
+      max-height: 8vh;
+      font-size: 3.5rem;
+    }
+    .A_TestTeaserHeader {
+      padding: 3% 2%;
+      font-size: 4.5rem;
+    }
+
+    .A_Question {
+      text-align: left;
+      font-size: 7rem !important;
+      font-weight: 700;
+      color: #0037ff;
+      background: linear-gradient(180deg, #ffffff 48.49%, #0037ff 135.28%);
+      padding: 4% 2%;
+    }
+    .A_AnswerText {
+      padding: 3% 2% 12%;
+      font-size: 4.2rem;
     }
   }
 }

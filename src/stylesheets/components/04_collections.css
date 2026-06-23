@@ -34,7 +34,7 @@
   display: flex;
   justify-content: end;
   margin-top: -5%;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .C_SocialsIcons img {
   width: 100%;
@@ -53,7 +53,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 8%;
   position: relative;
-  top: 100px;
+  top: 6.25rem;
 }
 
 /* _____________________________interactive_____________________________ */
@@ -175,7 +175,7 @@
 .C_DGames {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
   width: 100%;
   margin: 5% auto;
 }
@@ -236,5 +236,5 @@
   overflow-x: hidden;
 
   scrollbar-width: thin;
-  padding-right: 10px;
+  padding-right: 0.625rem;
 }

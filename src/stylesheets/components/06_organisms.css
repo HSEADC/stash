@@ -19,12 +19,12 @@
 .O_DAboutProject h1 {
   color: #0037ff;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   padding: 0 0 4%;
 }
 .O_DAboutProject p {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   letter-spacing: -1.1%;
   color: #0037ff;
@@ -53,7 +53,7 @@
 .O_DMiniYellowNote h1 {
   color: black;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: italic;
   font-family: 'arial narrow italic';
 
@@ -65,7 +65,7 @@
 .O_DYellowNoteArch h1 {
   color: black;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: italic;
   font-family: 'arial narrow italic';
   padding: 0 0 6%;
@@ -73,7 +73,7 @@
 .O_DYellowNote p,
 .O_DYellowNoteArch p {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 170%;
   letter-spacing: -1.1%;
   font-family: 'arial narrow italic';
@@ -101,7 +101,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: initial;
-  height: 360rem;
+  height: 22.5rem;
   position: relative;
   margin-top: 0;
   z-index: 10;
@@ -156,7 +156,7 @@
 .O_DInteractiveWindow2 h1 {
   color: #0037ff;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: 'arial narrow';
   padding: 2% 2% 4%;
 }
@@ -164,7 +164,7 @@
 .O_DInteractiveWindow2 p {
   color: #0037ff;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: 'arial narrow';
 
   line-height: 150%;
@@ -189,7 +189,7 @@
 }
 
 .O_DBlueNote h1 {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-family: 'arial narrow';
   font-style: italic;
   font-weight: 700;
@@ -198,7 +198,7 @@
   padding: 4% 4%;
 }
 .O_DBlueNote p {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-family: 'arial narrow';
   font-style: italic;
   line-height: 150%;
@@ -225,7 +225,7 @@
   z-index: 2;
 }
 .O_DOurScoials h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: 'arial narrow';
   font-weight: 400;
   color: #0037ff;
@@ -269,13 +269,13 @@
 .O_StyleguideRead h5 {
   font-family: 'arial narrow';
   color: #0037ff;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
   line-height: 110%;
 }
 .O_StyleguideRead h4,
 .O_StyleguideRead h5 {
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .O_StyleguideRead h4 {
   font-weight: 700;
@@ -283,7 +283,7 @@
 .O_StyleguideRead h1 {
   font-family: 'arial narrow italic';
   font-weight: 700;
-  font-size: 100px;
+  font-size: 6.25rem;
   color: #0037ff;
   line-height: 100%;
   letter-spacing: 0%;
