@@ -18,7 +18,12 @@ module.exports = {
     allStyles: './src/js/allStyles.js',
     websites: './src/js/websites.js',
     memes: './src/js/memes.js',
-    game1: './src/js/game.js'
+    game1: './src/js/game.js',
+    game2: './src/js/game.js',
+    game3: './src/js/game.js',
+    game4: './src/js/game.js',
+    game5: './src/js/game.js',
+    game6: './src/js/game.js'
   },
   output: {
     filename: '[name].js',
