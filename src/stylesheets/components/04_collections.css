@@ -218,7 +218,15 @@
   display: flex;
   flex-direction: column;
 }
-
+.C_MiniGames {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.C_MiniGames::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
 .C_AnswersLine {
   display: flex;
   flex-direction: row;

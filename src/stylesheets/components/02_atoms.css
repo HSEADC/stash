@@ -212,7 +212,8 @@ input[type='radio']:checked + .A_AnswerText {
 .A_D2PicGameplay,
 .A_D3PicGameplay,
 .A_D4PicGameplay,
-.A_D5PicGameplay {
+.A_D5PicGameplay,
+.A_D6PicGameplay {
   background: linear-gradient(180deg, #f9fbfe 15.38%, #245bdc 82.69%);
   box-shadow:
     4.89px 4.89px 4.89px 0px #557aff inset,
@@ -225,7 +226,11 @@ input[type='radio']:checked + .A_AnswerText {
 }
 
 .A_D1PicGameplay,
-.A_D2PicGameplay {
+.A_D2PicGameplay,
+.A_D3PicGameplay,
+.A_D4PicGameplay,
+.A_D5PicGameplay,
+.A_D6PicGameplay {
   cursor: pointer;
   width: 100%;
 }

@@ -365,3 +365,368 @@
   background: linear-gradient(180deg, #f9fbfe 15.38%, #245bdc 82.69%);
   box-shadow: 18.01px 18.01px 18.01px 0px #00000040;
 }
+
+/* ________________________________GAMES________________________________ */
+/* ________________________________GAME3________________________________ */
+.paintbox {
+  position: absolute;
+  right: calc(100vw / 8);
+  top: calc(100vw / 15);
+  width: calc(1000vw / 30);
+  height: calc(1000vw / 30);
+  overflow: hidden;
+  z-index: 10000;
+}
+
+.paint {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.canva-paint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.color-palette {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  width: calc(257.5vw / 24);
+  height: calc(100vw / 24);
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.color-button {
+  width: calc(47.5vw / 24);
+  height: calc(47.5vw / 24);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.color1 {
+  background-color: black;
+}
+
+.color2 {
+  background-color: #ff051a;
+}
+
+.color3 {
+  background-color: #ffdd00;
+}
+
+.color4 {
+  background-color: #00ff00;
+}
+
+.color5 {
+  background-color: #0037ff;
+}
+
+.color6 {
+  background-color: white;
+}
+
+.color7 {
+  background-color: #ffb005;
+}
+
+.color8 {
+  background-color: #ff009d;
+}
+
+.color9 {
+  background-color: #65d6ff;
+}
+
+.color10 {
+  background-color: #cc00ff;
+}
+/* ________________________________GAME4________________________________ */
+
+.game-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 92px;
+  overflow: hidden;
+}
+
+.nickname-game {
+  width: 90%;
+  max-width: 700px;
+  padding: 2% 4%;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  border: 2px solid #00ff99;
+  box-shadow:
+    0 0 50px #00ff99,
+    inset 0 0 20px #00ff99;
+  border-radius: 20px;
+  text-align: center;
+  color: #00ff99;
+}
+
+.game-header h2 {
+  font-size: clamp(1.4rem, 4vw, 2.8rem);
+  margin: 0;
+  letter-spacing: 3px;
+  color: #ff00cc;
+  text-shadow:
+    0 0 20px #ff00cc,
+    0 0 40px #ff00cc;
+}
+.game-header .subheader {
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+  color: #66ffaa;
+  text-shadow: 0 0 10px #66ffaa;
+  margin: 2px 0 15px;
+}
+
+.nickname-display {
+  background: #111;
+  border: 2px solid #00ff99;
+  box-shadow: 0 0 30px #00ff99 inset;
+  padding: 3% 5%;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  min-height: 70px;
+}
+
+#nicknameText {
+  font-size: clamp(1.2rem, 5vw, 2.8rem);
+  font-weight: bold;
+  word-break: break-all;
+  color: #ff00cc;
+  text-shadow: 0 0 15px #ff00cc;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.score-badge {
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
+  background: #00ff99;
+  color: #000;
+  padding: 4px 14px;
+  border-radius: 30px;
+  white-space: nowrap;
+  box-shadow: 0 0 20px #00ff99;
+  font-weight: bold;
+}
+
+.game-controls {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-controls button {
+  background: #111;
+  color: #00ff99;
+  border: 2px solid #00ff99;
+  padding: 12px 28px;
+  font-family: inherit;
+  font-size: clamp(0.8rem, 1.8vw, 1.4rem);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00ff99;
+}
+.game-controls button:hover {
+  background: #00ff99;
+  color: #000;
+  box-shadow: 0 0 40px #00ff99;
+}
+.game-controls .reset-btn {
+  border-color: #ff00cc;
+  color: #ff00cc;
+  box-shadow: 0 0 15px #ff00cc;
+}
+.game-controls .reset-btn:hover {
+  background: #ff00cc;
+  color: #000;
+}
+
+.nickname-status,
+.nickname-signature {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+  padding: 8px 0;
+  border-top: 1px dashed #00ff99;
+  margin-top: 8px;
+}
+.nickname-signature {
+  border-top: none;
+  border-bottom: 1px dashed #00ff99;
+  margin-bottom: 5px;
+}
+.nickname-status span,
+.nickname-signature span {
+  color: #ffcc00;
+  text-shadow: 0 0 8px #ffcc00;
+}
+
+/* ________________________________GAME5________________________________ */
+
+.aquarium-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 92px;
+  border-top-right-radius: 92px;
+}
+
+.slot {
+  position: absolute;
+  cursor: pointer;
+}
+
+.item {
+  transition: 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.slot[data-category='fish'] .item,
+.slot[data-category='stone'] .item,
+.slot[data-category='seaweed'] .item,
+.slot[data-category='bubble'] .item {
+  width: 80%;
+}
+.slot[data-category='shell'] .item {
+  width: 80%;
+}
+
+.pos-fish-1 {
+  left: 18%;
+  top: 9%;
+}
+
+.pos-fish-2 {
+  left: 40%;
+  top: 24%;
+}
+
+.pos-stone-1 {
+  left: 0%;
+  bottom: 9%;
+}
+
+.pos-stone-2 {
+  left: 13%;
+  bottom: 0;
+}
+
+.pos-shell {
+  left: 50%;
+  bottom: -2%;
+}
+
+.pos-seaweed {
+  right: -20%;
+  bottom: 2%;
+}
+
+.pos-bubble {
+  right: 150px;
+  top: 60px;
+}
+
+/* ________________________________GAME6________________________________ */
+
+.puzzle-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 72%;
+  height: 72%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0;
+  z-index: 10;
+}
+.puzzle-piece {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  border: none;
+  background-color: transparent;
+  user-select: none;
+  -webkit-user-drag: element;
+  transition: transform 0.1s;
+}
+
+.piece-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.puzzle-piece.dragging {
+  opacity: 0.5;
+  cursor: grabbing;
+}
+
+.puzzle-piece.drag-over {
+  transform: scale(1.02);
+  z-index: 20;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.win-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 40px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'arial narrow';
+  color: #333;
+  z-index: 100;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.win-message.hidden {
+  display: none;
+}
