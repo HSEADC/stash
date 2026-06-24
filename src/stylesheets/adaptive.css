@@ -1109,7 +1109,10 @@
     .C_InteractiveIcons img {
       width: 100%;
     }
-
+    .M_DRubricators a {
+      padding: 3% 5%;
+      font-size: 5rem;
+    }
     .S_DAboutUs {
       background-image: url(../images/Q.M1BGUS.svg);
     }
